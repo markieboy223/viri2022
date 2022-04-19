@@ -1,0 +1,101 @@
+@use "../abstracts" as a;
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: a.$font-family-sans-serif
+}
+
+body, html {
+    height: 100%;
+    color: a.$primary-color;
+    line-height: 1.8;
+}
+
+img {
+    border-radius: 25px;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('../assets/images/Bg2.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("../assets/images/Bg.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("../assets/images/Bg-learnmore.jpg");
+    min-height: 400px;
+}
+
+.bgimg-ComingSoon {
+    background-image: url('../assets/images/forestbridge.jpg');
+    min-height: 100%;
+}
+
+.JMSoft-wide {
+    letter-spacing: 10px;
+}
+
+.JMSoft-hover-opacity {
+    cursor: pointer;
+}
+
+/* Turn off home scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 100% !important;
+    }
+}
+
+@media only screen and (max-device-width: 600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 100% !important;
+    }
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.img-100 {
+    width: 100% !important;
+}
+
+.img-50 {
+    width: 30% !important;
+}
+
+.w-95 {
+    width: 95%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.btn-mt-custom {
+    margin-top: 64px;
+}

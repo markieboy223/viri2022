@@ -1,0 +1,88 @@
+//cleanUp
+@use "../../resources/scss/cleanUp/cleanUp";
+
+//abstracts
+@use "../../resources/scss/abstracts/colors";
+@use "../../resources/scss/abstracts/fonts";
+@use "../../resources/scss/abstracts/elements";
+
+//JMSoft
+@use "../../resources/scss/JMSoft/JMSoft";
+
+//components
+@use "../../resources/scss/components/sliders";
+@use "../../resources/scss/components/roadmap";
+
+//pages
+@use "../../resources/scss/pages/home";
+
+$font-size-base: 12px;
+$h1-font-size: 36px;
+$h2-font-size: 30px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 18px;
+$h6-font-size: 16px;
+$font-weight-base: 400;
+$font-family-sans-serif: "Segoe UI", Arial, sans-serif;
+$text-color: colors.$primary-color;
+
+@media only screen and (max-device-width: 935px) and (min-device-width: 600px) {
+    .JMSoft-jumbo {
+        font-size: 25px !important;
+    }
+    .Media {
+        font-size: 1rem !important;
+    }
+    img {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-device-width: 600px) and (min-device-width: 355px) {
+    .JMSoft-jumbo {
+        font-size: 25px !important;
+    }
+    .Media {
+        font-size: 1rem !important;
+    }
+    img {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-device-width: 355px) and (min-device-width: 315px) {
+    .JMSoft-jumbo {
+        font-size: 15px !important;
+    }
+    .Media {
+        font-size: 0.8rem !important;
+    }
+    img {
+        width: 75% !important;
+    }
+}
+
+@media only screen and (max-device-width: 315px) and (min-device-width: 237px) {
+    .JMSoft-jumbo {
+        font-size: 15px !important;
+    }
+    .Media {
+        font-size: 0.7rem !important;
+    }
+    img {
+        width: 75% !important;
+    }
+}
+
+@media only screen and (max-device-width: 237px) {
+    .JMSoft-jumbo {
+        font-size: 15px !important;
+    }
+    .Media {
+        font-size: 0.4rem !important;
+    }
+    img {
+        width: 75% !important;
+    }
+}
