@@ -174,6 +174,24 @@
     </div>
 </div>
 
+<!-- Four Parallax Image with Services Text -->
+<div class="bgimg-4 JMSoft-display-container JMSoft-opacity-min">
+    <div class="JMSoft-display-middle">
+        <span class="JMSoft-xxlarge JMSoft-text-white JMSoft-wide">SERVICES</span>
+    </div>
+</div>
+
+<div id="services">
+    <div class="row d-flex">
+        <div class="col-6">
+            MEDIA
+        </div>
+        <div class="col-6">
+            ICT
+        </div>
+    </div>
+</div>
+
 <!-- Third Parallax Image with Portfolio Text -->
 <div class="bgimg-3 JMSoft-display-container JMSoft-opacity-min">
     <div class="JMSoft-display-middle">
