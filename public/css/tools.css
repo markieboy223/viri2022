@@ -1,0 +1,269 @@
+h2 {
+    font-size: 20px !important;
+}
+
+#tool1, #tool2, #tool3, #tool4, #tool5, #tool6 {
+    column-count: 2;
+    display: flex;
+    margin: 1rem;
+    border: 1px black solid;
+    border-radius: 25px;
+    height: auto;
+
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.tool-item {
+    margin: 1rem;
+}
+
+/*checked Bg*/
+.item-checkedBg {
+    background: conic-gradient(
+        white 90deg,
+        hotpink 90deg 180deg,
+        white 180deg 270deg,
+        hotpink 270deg
+    ) top left / 60px 60px repeat;
+}
+
+/*bell animation*/
+.icon-wrapper {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.icon-wrapper:after {
+    content: attr(data-number);
+    width: 20px;
+    height: 20px;
+    background-color: #d32b2b;
+    color: #fff;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    position: center;
+    top: 5px;
+    right: 0;
+    opacity: 0;
+    transform: translateY(3px);
+}
+
+.icon-wrapper:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity .25s, transform .25s;
+}
+
+.bell-icon {
+    max-width: 100%;
+}
+
+.icon-wrapper:hover .bell-icon {
+    animation: shake 1s forwards;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+    20% {
+        transform: rotate(-15deg);
+    }
+    30% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+}
+
+/*toggle button dark/light*/
+#toggle-darkLight {
+    display: none;
+}
+
+.button-darkLight {
+    display: inline-block;
+    width: 90px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.button-darkLight::after {
+    content: url("../assets/images/icons/sun-line.svg");
+    width: 40px;
+    height: 40px;
+    background-color: #e03c3c;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+    position: absolute;
+    top: -5px;
+    left: 0;
+    display: grid;
+    place-content: center;
+    line-height: 0;
+    transition: background-color 1s, transform 1s ease-in;
+}
+
+#toggle-darkLight:checked + .button-darkLight::after {
+    content: url("../assets/images/icons/moon-line-white.svg");
+    background-color: #1f2571;
+    transform: translateX(50px) rotate(360deg);
+}
+
+/*BMI Calculator*/
+.form-bmiCalc {
+    background-color: #fff;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    margin: 20px auto 20px auto;
+    display: flex;
+    border: solid 1px #289df6;
+    box-shadow: 0 0 40px 0 #ddd;
+    padding: 1rem;
+}
+
+.form-bmiCalc:hover {
+    box-shadow: 0 0 60px 0 #ccc;
+    transition: .4s;
+    transform: scale(1.02);
+}
+
+.row-one-bmiCalc, .row-two-bmiCalc {
+    padding: 1rem;
+}
+
+.text-input-bmiCalc {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #dbeffe;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.text-input-bmiCalc:last-child {
+    margin-bottom: 35px;
+}
+
+.text-input-bmiCalc:hover {
+    background-color: #cbe7fd;
+}
+
+#submit {
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+    background-color: #289df6;
+    color: #fff;
+    display: block;
+    outline: none;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+#submit:hover {
+    background-color: #0a8ef2;
+}
+
+/*Card Custom*/
+.card-custom {
+    width: 150px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 10px;
+    outline: 1px solid rgba(255, 255, 255, .5);
+    outline-offset: -8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image-custom {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .6;
+    transition: transform .75s;
+}
+.card-custom:hover .card-image-custom {
+    transform: scale(1.15);
+}
+.card-title-custom {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-size: 20px;
+    text-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+
+/*Overlapping Gallery*/
+.overlapping-gallery {
+    height: 100px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.overlapping-gallery img {
+    height: 10%;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: sticky;
+    top: 0;
+}
+
+/*Search Box Custom*/
+.icon {
+    color: #21DFCD;
+    float: right;
+    width: 40px;
+    font-size: 1.3rem;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.search-box-custom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2C3441;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-box-custom:hover > input {
+    width: 200px;
+    padding: 0 10px;
+}
+
+.search-box-custom:hover > .icon {
+    background: #536179;
+}
+.icon:hover {
+    transform: rota;
+}

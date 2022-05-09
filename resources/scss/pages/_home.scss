@@ -76,6 +76,10 @@ img {
     width: 100% !important;
 }
 
+.img-80 {
+    width: 80% !important;
+}
+
 .img-50 {
     width: 30% !important;
 }
@@ -98,4 +102,8 @@ img {
 
 .btn-mt-custom {
     margin-top: 64px;
+}
+
+#slider-height {
+    min-height: 400px!important;
 }

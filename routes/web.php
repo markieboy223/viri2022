@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('comingSoon');
+    return view('home');
+});
+
+Route::get('/tools', function () {
+    return view('components.tools');
 });

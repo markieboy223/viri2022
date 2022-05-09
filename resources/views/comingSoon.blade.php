@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
 <head>
-    <title>JMSoft</title>
+    <title>Viri</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="JMSoft">
