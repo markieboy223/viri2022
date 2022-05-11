@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+Route::resource('companys', \App\Http\Controllers\CompanyController::class);
 
 Route::get('/tools', function () {
     return view('components.tools');
