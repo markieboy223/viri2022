@@ -7,7 +7,7 @@
                 <h2>Viri verified companies</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('companys.create') }}"> Create New Post</a>
+                <a class="btn btn-success" href="{{ route('companys.create') }}"> Create New Company</a>
             </div>
         </div>
     </div>
@@ -18,35 +18,21 @@
         </div>
     @endif
 
-    <table class="table table-bordered">
-        <tr>
-            <th></th>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Description</th>
-            <th>Checked</th>
-            <th width="280px">Action</th>
-        </tr>
+
+        <div class="card-group">
         @foreach ($data as $key => $value)
-            <tr>
-                <td>{{ ++$i }}</td>
-                <td>{{ $value->image }}</td>
-                <td>{{ $value->name }}</td>
-                <td>{{ $value->email }}</td>
-                <td>{{ \Str::limit($value->description, 100) }}</td>
-                <td>{{ $value->checked }}</td>
-                <td>
-                    <form action="{{ route('companys.destroy',$value->id) }}" method="POST">
-                        <a class="btn btn-info" href="{{ route('companys.show',$value->id) }}">Show</a>
-                        <a class="btn btn-primary" href="{{ route('companys.edit',$value->id) }}">Edit</a>
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
-                </td>
-            </tr>
+            <div class="card" style="width: 18rem;">
+                <img width="100%" src="{{$value->image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{$value->name}}</h5>
+                    <p class="card-text">{{ \Str::limit($value->description, 100) }}</p>
+                    <a href="{{ route('companys.show',$value->id) }}" class="btn btn-primary">More</a>
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
         @endforeach
-    </table>
+        </div>
     {!! $data->links() !!}
 @endsection

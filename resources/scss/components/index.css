@@ -87,5 +87,40 @@
     opacity: 1;
   }
 }
+/*Card Custom*/
+.card-custom {
+  width: 50%;
+  height: 50%;
+  background-color: #333;
+  border-radius: 10px;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  outline-offset: -8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image-custom {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: transform 0.75s;
+}
+
+.card-custom:hover .card-image-custom {
+  transform: scale(1.15);
+}
+
+.card-title-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 4rem;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
 
 /*# sourceMappingURL=index.css.map */
