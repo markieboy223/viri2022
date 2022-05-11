@@ -14,10 +14,8 @@
 
 <!-- Container (About Section) -->
 <div class="JMSoft-content JMSoft-container JMSoft-padding-64" id="about">
-    <h3 class="JMSoft-center">ABOUT VIRI</h3>
-    <p class="JMSoft-center"><em>The verification for sustainability</em></p>
-    <p class="JMSoft-center">Viri is a private company that provides sustainability labels to film production companies
-        and factories so that they can let their customers know that they care about ecological issues..</p>
+    <h3 class="JMSoft-center">Get your Virification</h3>
+    <p class="JMSoft-center"><em></em></p>
     <div class="JMSoft-row">
         <div class="JMSoft-col m6 JMSoft-center JMSoft-padding-large">
             <p><b><i class="fa fa-user JMSoft-margin-right"></i>Our Team</b></p><br>
@@ -28,14 +26,7 @@
 
         <!-- Hide this text on small devices -->
         <div class="JMSoft-col m6 JMSoft-hide-small JMSoft-padding-large">
-            <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Welcome to Viri Solutions one of the newest but most professional companies out there. We are trying to create name and impact in the sustainability plans of a company. Our goal is to make every company so sustainable as possible. A lot of companies aren’t clear about how sustainable their products are and their packaging is.  With the Virification they can change that. The Virification is a quality mark that gives a look into the sustainability of a company.Welcome to Viri Solutions one of the newest but most professional companies out there. We are trying to create name and impact in the sustainability plans of a company. Our goal is to make every company so sustainable as possible. A lot of companies aren’t clear about how sustainable their products are and their packaging is.  With the Virification they can change that. The Virification is a quality mark that gives a look into the sustainability of a company.</p>
         </div>
     </div>
 </div>
