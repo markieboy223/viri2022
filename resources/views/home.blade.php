@@ -196,26 +196,33 @@
 </div>
 
 <div id="services">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="col-2"></div>
+                <div class="col-2">
                     <div class="card-custom">
                         <img src="{{ asset('assets/images/media1.jpg') }}" alt="media image"
                              class="card-image-custom">
-                        <h3 class="card-title-custom">MEDIA</h3>
+                        <div class="JMSoft-display-middle">
+                            <span class="card-title-custom JMSoft-text-white JMSoft-xxlarge">MEDIA</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="col-2">
                     <div class="card-custom">
                         <img src="{{ asset('assets/images/ict-factory.jpg') }}" alt="factory image"
                              class="card-image-custom">
-                        <h3 class="card-title-custom">ICT</h3>
+                        <div class="JMSoft-display-middle">
+                            <span class="card-title-custom JMSoft-text-white JMSoft-xxlarge">ICT</span>
+                        </div>
                     </div>
                 </div>
+                <div class="col-2"></div>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
