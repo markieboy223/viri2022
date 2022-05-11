@@ -3,7 +3,6 @@
 @include('includes.head')
 <body>
 @include('includes.navbar')
-
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 JMSoft-display-container JMSoft-opacity-min" id="home">
     <div class="JMSoft-display-middle nowrap">
@@ -16,25 +15,31 @@
 <div class="JMSoft-content JMSoft-container JMSoft-padding-64" id="about">
     <h3 class="JMSoft-center">ABOUT VIRI</h3>
     <p class="JMSoft-center"><em>The verification for sustainability</em></p>
-    <p class="JMSoft-center">Viri is a private company that provides sustainability labels to film production companies
+    <p class="JMSoft-center">Viri is a private company that provides sustainability labels to film production
+        companies
         and factories so that they can let their customers know that they care about ecological issues..</p>
     <div class="JMSoft-row">
         <div class="JMSoft-col m6 JMSoft-center JMSoft-padding-large">
             <p><b><i class="fa fa-user JMSoft-margin-right"></i>Our Team</b></p><br>
             <img src="{{ asset('assets/images/team.jpg') }}"
-                 class="JMSoft-round JMSoft-image JMSoft-opacity JMSoft-hover-opacity-off" alt="Photo of Me" width="500"
+                 class="JMSoft-round JMSoft-image JMSoft-opacity JMSoft-hover-opacity-off" alt="Photo of Me"
+                 width="500"
                  height="333">
         </div>
 
         <!-- Hide this text on small devices -->
         <div class="JMSoft-col m6 JMSoft-hide-small JMSoft-padding-large">
-            <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi
                 ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                 consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco
                 laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
@@ -75,7 +80,8 @@
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
         {{--            <div class="numbertext">1 / 3</div>--}}
-        <img class="img-100" width="400px" src="{{ asset('assets/images/plasticInfo/global-plastics-production.svg') }}"
+        <img class="img-100" width="400px"
+             src="{{ asset('assets/images/plasticInfo/global-plastics-production.svg') }}"
              alt="global plastics production">
         <div class="text">Global Plastics Production</div>
     </div>
@@ -120,44 +126,52 @@
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="JMSoft-row-padding JMSoft-center">
         <div class="JMSoft-col m3">
-            <img src="{{ asset('assets/images/p1.jpg') }}" onclick="onClick(this)" class="JMSoft-hover-opacity img-100"
+            <img src="{{ asset('assets/images/p1.jpg') }}" onclick="onClick(this)"
+                 class="JMSoft-hover-opacity img-100"
                  alt="The mist over the mountains">
         </div>
 
         <div class="JMSoft-col m3">
-            <img src="{{ asset('assets/images/p2.jpg') }}" onclick="onClick(this)" class="JMSoft-hover-opacity img-100"
+            <img src="{{ asset('assets/images/p2.jpg') }}" onclick="onClick(this)"
+                 class="JMSoft-hover-opacity img-100"
                  alt="Coffee beans">
         </div>
 
         <div class="JMSoft-col m3">
-            <img src="{{ asset('assets/images/p3.jpg') }}" onclick="onClick(this)" class="JMSoft-hover-opacity img-100"
+            <img src="{{ asset('assets/images/p3.jpg') }}" onclick="onClick(this)"
+                 class="JMSoft-hover-opacity img-100"
                  alt="Bear closeup">
         </div>
 
         <div class="JMSoft-col m3">
-            <img src="{{ asset('assets/images/p4.jpg') }}" onclick="onClick(this)" class="JMSoft-hover-opacity img-100"
+            <img src="{{ asset('assets/images/p4.jpg') }}" onclick="onClick(this)"
+                 class="JMSoft-hover-opacity img-100"
                  alt="Quiet ocean">
         </div>
     </div>
 
     <div class="JMSoft-row-padding JMSoft-center JMSoft-section">
         <div class="JMSoft-col m3">
-            <img src="{{ asset('assets/images/p5.jpg') }}" onclick="onClick(this)" class="JMSoft-hover-opacity img-100"
+            <img src="{{ asset('assets/images/p5.jpg') }}" onclick="onClick(this)"
+                 class="JMSoft-hover-opacity img-100"
                  alt="The mist">
         </div>
 
         <div class="JMSoft-col m3">
-            <img src="{{ asset('assets/images/p6.jpg') }}" onclick="onClick(this)" class="JMSoft-hover-opacity img-100"
+            <img src="{{ asset('assets/images/p6.jpg') }}" onclick="onClick(this)"
+                 class="JMSoft-hover-opacity img-100"
                  alt="My beloved typewriter">
         </div>
 
         <div class="JMSoft-col m3">
-            <img src="{{ asset('assets/images/p7.jpg') }}" onclick="onClick(this)" class="JMSoft-hover-opacity img-100"
+            <img src="{{ asset('assets/images/p7.jpg') }}" onclick="onClick(this)"
+                 class="JMSoft-hover-opacity img-100"
                  alt="Empty ghost train">
         </div>
 
         <div class="JMSoft-col m3">
-            <img src="{{ asset('assets/images/p8.jpg') }}" onclick="onClick(this)" class="JMSoft-hover-opacity img-100"
+            <img src="{{ asset('assets/images/p8.jpg') }}" onclick="onClick(this)"
+                 class="JMSoft-hover-opacity img-100"
                  alt="Sailing">
         </div>
         <button class="JMSoft-button JMSoft-padding-large JMSoft-light-grey btn-mt-custom">LOAD MORE</button>
@@ -182,12 +196,24 @@
 </div>
 
 <div id="services">
-    <div class="row d-flex">
-        <div class="col-6">
-            MEDIA
-        </div>
-        <div class="col-6">
-            ICT
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="card-custom">
+                        <img src="{{ asset('assets/images/media1.jpg') }}" alt="media image"
+                             class="card-image-custom">
+                        <h3 class="card-title-custom">MEDIA</h3>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="card-custom">
+                        <img src="{{ asset('assets/images/ict-factory.jpg') }}" alt="factory image"
+                             class="card-image-custom">
+                        <h3 class="card-title-custom">ICT</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -210,23 +236,28 @@
         </div>
         <div class="JMSoft-col m8 JMSoft-panel">
             <div class="JMSoft-large JMSoft-margin-bottom">
-                <i class="fa fa-map-marker fa-fw JMSoft-hover-text-black JMSoft-xlarge JMSoft-margin-right"></i> The
+                <i class="fa fa-map-marker fa-fw JMSoft-hover-text-black JMSoft-xlarge JMSoft-margin-right"></i>
+                The
                 Netherlands & Finland<br>
                 {{--                <i class="fa fa-phone fa-fw JMSoft-hover-text-black JMSoft-xlarge JMSoft-margin-right"></i> Phone: +00 151515<br>--}}
-                <i class="fa fa-envelope fa-fw JMSoft-hover-text-black JMSoft-xlarge JMSoft-margin-right"></i> Email:
+                <i class="fa fa-envelope fa-fw JMSoft-hover-text-black JMSoft-xlarge JMSoft-margin-right"></i>
+                Email:
                 info@viri-solution.com<br>
             </div>
             {{--            <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>--}}
             <form action="/action_page.php" target="_blank">
                 <div class="JMSoft-row-padding" style="margin:0 -16px 8px -16px">
                     <div class="JMSoft-half">
-                        <input class="JMSoft-input JMSoft-border" type="text" placeholder="Name" required name="Name">
+                        <input class="JMSoft-input JMSoft-border" type="text" placeholder="Name" required
+                               name="Name">
                     </div>
                     <div class="JMSoft-half">
-                        <input class="JMSoft-input JMSoft-border" type="text" placeholder="Email" required name="Email">
+                        <input class="JMSoft-input JMSoft-border" type="text" placeholder="Email" required
+                               name="Email">
                     </div>
                 </div>
-                <input class="JMSoft-input JMSoft-border" type="text" placeholder="Message" required name="Message">
+                <input class="JMSoft-input JMSoft-border" type="text" placeholder="Message" required
+                       name="Message">
                 <button class="JMSoft-button JMSoft-black JMSoft-right JMSoft-section" type="submit">
                     <i class="fa fa-paper-plane"></i> SEND MESSAGE
                 </button>
