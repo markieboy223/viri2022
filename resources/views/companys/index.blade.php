@@ -27,9 +27,6 @@
                     <h5 class="card-title">{{$value->name}}</h5>
                     <p class="card-text">{{ \Str::limit($value->description, 100) }}</p>
                     <a href="{{ route('companys.show',$value->id) }}" class="btn btn-primary">More</a>
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger">Delete</button>
                 </div>
             </div>
         @endforeach
