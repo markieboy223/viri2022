@@ -5,12 +5,14 @@
            href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
             <i class="fa fa-bars"></i>
         </a>
-        <a href="#home" class="JMSoft-bar-item JMSoft-button">HOME</a>
-        <a href="#about" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-user"></i>
+        <a href="/#home" class="JMSoft-bar-item JMSoft-button">HOME</a>
+        <a href="/#about" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-user"></i>
             ABOUT</a>
-        <a href="#portfolio" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-th"></i>
+        <a href="/#portfolio" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-th"></i>
             PORTFOLIO</a>
-        <a href="#contact" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-envelope"></i>
+        <a href="/companys" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-building"></i>
+            COMPANIES</a>
+        <a href="/#contact" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-envelope"></i>
             CONTACT</a>
         <a href="#" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small JMSoft-right JMSoft-hover-red">
             <i class="fa fa-search"></i>
