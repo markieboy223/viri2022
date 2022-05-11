@@ -2286,7 +2286,7 @@ img {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -2308,6 +2308,12 @@ img {
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("../assets/images/Bg-learnmore.jpg");
+  min-height: 400px;
+}
+
+/* Four image (Services) */
+.bgimg-4 {
+  background-image: url("../assets/images/Bg-services.jpg");
   min-height: 400px;
 }
 
@@ -2375,72 +2381,6 @@ img {
 
 #slider-height {
   min-height: 400px !important;
-}
-
-@media only screen and (max-device-width: 935px) and (min-device-width: 600px) {
-  .JMSoft-jumbo {
-    font-size: 25px !important;
-  }
-
-  .Media {
-    font-size: 1rem !important;
-  }
-
-  img {
-    width: 80% !important;
-  }
-}
-@media only screen and (max-device-width: 600px) and (min-device-width: 355px) {
-  .JMSoft-jumbo {
-    font-size: 25px !important;
-  }
-
-  .Media {
-    font-size: 1rem !important;
-  }
-
-  img {
-    width: 80% !important;
-  }
-}
-@media only screen and (max-device-width: 355px) and (min-device-width: 315px) {
-  .JMSoft-jumbo {
-    font-size: 15px !important;
-  }
-
-  .Media {
-    font-size: 0.8rem !important;
-  }
-
-  img {
-    width: 75% !important;
-  }
-}
-@media only screen and (max-device-width: 315px) and (min-device-width: 237px) {
-  .JMSoft-jumbo {
-    font-size: 15px !important;
-  }
-
-  .Media {
-    font-size: 0.7rem !important;
-  }
-
-  img {
-    width: 75% !important;
-  }
-}
-@media only screen and (max-device-width: 237px) {
-  .JMSoft-jumbo {
-    font-size: 15px !important;
-  }
-
-  .Media {
-    font-size: 0.4rem !important;
-  }
-
-  img {
-    width: 75% !important;
-  }
 }
 
 /*# sourceMappingURL=home.css.map */
