@@ -22,7 +22,6 @@
     </p>
     <div class="JMSoft-row">
         <div class="JMSoft-col m6 JMSoft-center JMSoft-padding-large">
-            <p><b><i class="fa fa-user JMSoft-margin-right"></i>Our Team</b></p><br>
             <img src="{{ asset('assets/images/team.jpg') }}"
                  class="JMSoft-round JMSoft-image JMSoft-opacity JMSoft-hover-opacity-off" alt="Photo of Me"
                  width="500"
@@ -125,7 +124,7 @@
 <div id="services">
     <div class="JMSoft-row JMSoft-center">
         {{--        <div><span class="JMSoft-xlarge">Choose Sector</span></div>--}}
-        <div class="JMSoft-third JMSoft-section">
+        <div class="JMSoft-third JMSoft-section bg-white">
             <div class="card-custom">
                 <img src="{{ asset('assets/images/Checkmarks/bronze-check-mark.png') }}" alt="Bronze Checkmark"
                      class="card-image-custom">
@@ -157,7 +156,9 @@
     </div>
     <div class="card-custom">
         <img src="{{ asset('assets/images/ict-factory.jpg') }}" alt="Gold Checkmark"
-             class="card-image-custom">
+             class="card-image-custom"
+             style="max-height: 890px !important;"
+        >
         <div class="JMSoft-display-middle">
             <span class="card-title-custom JMSoft-text-white JMSoft-xxlarge">CLICK HERE TO CHANGE THE WORLD!</span>
         </div>
