@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('home');
 });
 Route::resource('companys', \App\Http\Controllers\CompanyController::class);
+Route::resource('forms', \App\Http\Controllers\FormController::class);
 
 Route::get('/tools', function () {
     return view('components.tools');

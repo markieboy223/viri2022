@@ -1,13 +1,13 @@
-@extends('companys.layout')
+@extends('forms.layout')
 
 @section('content')
-    <div style="margin-top: 10%" class="row ">
+    <div class="row ">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2> Show Company</h2>
+                <h2> Show Product</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('companys.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('forms.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -16,33 +16,31 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Image:</strong>
-                <img style="width: 250px" src="{{ $company->image }}" alt=""/>
+                <img style="width: 250px" src="{{ $form->image }}" alt=""/>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>name:</strong>
-                {{ $company->name }}
+                {{ $form->name }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>email:</strong>
-                {{ $company->email }}
+                {{ $form->email }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Description:</strong>
-                {{ $company->description }}
+                {{ $form->description }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>checked:</strong>
-                @if($company->checked == 1)
-                    <a><i class="fa fa-check fa-lg"></i></a>
-                @endif
+                {{ $form->checked }}
             </div>
         </div>
     </div>

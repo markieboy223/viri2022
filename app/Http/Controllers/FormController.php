@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Companys;
+use App\Models\Forms;
 use Illuminate\Http\Request;
 
-class CompanyController extends Controller
+class FormController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        $data = Companys::latest()->paginate(5);
+        $data = Forms::latest()->paginate(5);
 
-        return view('companys.index',compact('data'))
+        return view('forms.index',compact('data'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -27,7 +27,7 @@ class CompanyController extends Controller
      */
     public function create()
     {
-        return view('companys.create');
+        return view('forms.create');
     }
 
     /**
@@ -40,68 +40,68 @@ class CompanyController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'description' => 'required',
+            'sector' => 'required',
         ]);
 
-        Companys::create($request->all());
+        Forms::create($request->all());
 
-        return redirect()->route('companys.index')
-            ->with('success','Company created successfully.');
+        return redirect()->route('forms.index')
+            ->with('success','Form created successfully.');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Companys  $company
+     * @param  \App\Models\Forms  $form
      * @return \Illuminate\Http\Response
      */
-    public function show(Companys $company)
+    public function show(Forms $form)
     {
-        return view('companys.show',compact('company'));
+        return view('forms.show',compact('form'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Companys  $company
+     * @param  \App\Models\Forms  $form
      * @return \Illuminate\Http\Response
      */
-    public function edit(Companys $company)
+    public function edit(Forms $form)
     {
-        return view('companys.edit',compact('company'));
+        return view('forms.edit',compact('form'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Companys  $company
+     * @param  \App\Models\Forms  $form
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Companys $company)
+    public function update(Request $request, Forms $form)
     {
         $request->validate([
             'name' => 'required',
-            'description' => 'required',
+            'sector' => 'required',
         ]);
 
-        $company->update($request->all());
+        $form->update($request->all());
 
-        return redirect()->route('companys.index')
-            ->with('success','Company updated successfully');
+        return redirect()->route('forms.index')
+            ->with('success','Form updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Companys  $company
+     * @param  \App\Models\Forms  $form
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Companys $company)
+    public function destroy(Forms $form)
     {
-        $company->delete();
+        $form->delete();
 
-        return redirect()->route('company.index')
-            ->with('success','Company deleted successfully');
+        return redirect()->route('forms.index')
+            ->with('success','Form deleted successfully');
     }
 }

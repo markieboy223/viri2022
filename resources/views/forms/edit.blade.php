@@ -1,13 +1,13 @@
-@extends('companys.layout')
+@extends('forms.layout')
 
 @section('content')
-    <div style="margin-top: 10%" class="row">
+    <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
                 <h2>Edit Product</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('companys.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('forms.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
         </div>
     @endif
 
-    <form action="{{ route('companys.update',$company->id) }}" method="POST">
+    <form action="{{ route('forms.update',$form->id) }}" method="POST">
         @csrf
         @method('PUT')
 
@@ -32,7 +32,7 @@
                 <div class="form-group">
                     <strong>name:</strong>
                     <label>
-                        <input type="text" name="image" value="{{ $company->image }}" class="form-control" placeholder="Image url">
+                        <input type="text" name="image" value="{{ $form->image }}" class="form-control" placeholder="Image url">
                     </label>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                 <div class="form-group">
                     <strong>name:</strong>
                     <label>
-                        <input type="text" name="name" value="{{ $company->name }}" class="form-control" placeholder="Name">
+                        <input type="text" name="name" value="{{ $form->name }}" class="form-control" placeholder="Name">
                     </label>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                 <div class="form-group">
                     <strong>email:</strong>
                     <label>
-                        <input type="text" name="email" value="{{ $company->email }}" class="form-control" placeholder="Email">
+                        <input type="text" name="email" value="{{ $form->email }}" class="form-control" placeholder="Email">
                     </label>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                 <div class="form-group">
                     <strong>Description:</strong>
                     <label>
-                        <textarea class="form-control" style="height:150px" name="description" placeholder="Detail">{{ $company->description }}</textarea>
+                        <textarea class="form-control" style="height:150px" name="description" placeholder="Detail">{{ $form->description }}</textarea>
                     </label>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                 <div class="form-group">
                     <strong>checked:</strong>
                     <label>
-                        <input type="text" name="checked" value="{{ $company->checked }}" class="form-control" placeholder="Checked">
+                        <input type="text" name="checked" value="{{ $form->checked }}" class="form-control" placeholder="Checked">
                     </label>
                 </div>
             </div>
