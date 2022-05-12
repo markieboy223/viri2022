@@ -2415,4 +2415,12 @@ img {
   min-height: 400px !important;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
+#services {
+  min-height: 800px;
+}
+
 /*# sourceMappingURL=home.css.map */

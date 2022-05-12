@@ -22,3 +22,7 @@ Route::resource('forms', \App\Http\Controllers\FormController::class);
 Route::get('/tools', function () {
     return view('components.tools');
 });
+
+Route::get('/p', function () {
+    return view('presentation');
+});
