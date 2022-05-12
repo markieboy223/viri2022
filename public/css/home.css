@@ -2415,4 +2415,8 @@ img {
   min-height: 400px !important;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 /*# sourceMappingURL=home.css.map */

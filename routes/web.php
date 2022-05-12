@@ -21,3 +21,7 @@ Route::resource('companys', \App\Http\Controllers\CompanyController::class);
 Route::get('/tools', function () {
     return view('components.tools');
 });
+
+Route::get('/p', function () {
+    return view('presentation');
+});

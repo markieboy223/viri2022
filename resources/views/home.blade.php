@@ -33,11 +33,7 @@
                 create name and impact in the sustainability plans of a company. Our goal is to make every company so
                 sustainable as possible. A lot of companies aren’t clear about how sustainable their products are and
                 their packaging is. With the Virification they can change that. The Virification is a quality mark that
-                gives a look into the sustainability of a company.Welcome to Viri Solutions one of the newest but most
-                professional companies out there. We are trying to create name and impact in the sustainability plans of
-                a company. Our goal is to make every company so sustainable as possible. A lot of companies aren’t clear
-                about how sustainable their products are and their packaging is. With the Virification they can change
-                that. The Virification is a quality mark that gives a look into the sustainability of a company.</p>
+                gives a look into the sustainability of a company.</p>
         </div>
     </div>
 </div>
@@ -193,33 +189,29 @@
 </div>
 
 <div id="services">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="col-2"></div>
-                <div class="col-2">
-                    <div class="card-custom">
-                        <img src="{{ asset('assets/images/media1.jpg') }}" alt="media image"
-                             class="card-image-custom">
-                        <div class="JMSoft-display-middle">
-                            <span class="card-title-custom JMSoft-text-white JMSoft-xxlarge">MEDIA</span>
-                        </div>
-                    </div>
+    <div class="JMSoft-row JMSoft-center JMSoft-padding-16">
+        <div><span class="JMSoft-xlarge">Choose Sector</span></div>
+        <div class="JMSoft-center JMSoft-medium"><span>(To get a expert for u verification)</span></div>
+
+        <div class="JMSoft-half JMSoft-section">
+            <div class="card-custom">
+                <img src="{{ asset('assets/images/ict-factory.jpg') }}" alt="factory image"
+                     class="card-image-custom">
+                <div class="JMSoft-display-middle">
+                    <span class="card-title-custom JMSoft-text-white JMSoft-xxlarge">ICT</span>
                 </div>
-                <div class="col-2">
-                    <div class="card-custom">
-                        <img src="{{ asset('assets/images/ict-factory.jpg') }}" alt="factory image"
-                             class="card-image-custom">
-                        <div class="JMSoft-display-middle">
-                            <span class="card-title-custom JMSoft-text-white JMSoft-xxlarge">ICT</span>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="JMSoft-half JMSoft-section">
+            <div class="card-custom">
+                <img src="{{ asset('assets/images/media1.jpg') }}" alt="media image"
+                     class="card-image-custom">
+                <div class="JMSoft-display-middle">
+                    <span class="card-title-custom JMSoft-text-white JMSoft-xxlarge">Media</span>
                 </div>
-                <div class="col-2"></div>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
