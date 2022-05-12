@@ -27,6 +27,9 @@
                     <h5 class="card-title">{{$value->name}}</h5>
                     <p class="card-text">{{ \Str::limit($value->description, 100) }}</p>
                     <a href="{{ route('companys.show',$value->id) }}" class="btn btn-primary">More</a>
+                    @if($value->checked === 1)
+                    <a style="margin-left: 60%;"><i class="fa fa-check fa-lg"></i></a>
+                    @endif
                 </div>
             </div>
         @endforeach
