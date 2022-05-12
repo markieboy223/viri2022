@@ -19,15 +19,16 @@
                 <img style="width: 250px" src="{{ $company->image }}" alt=""/>
             </div>
         </div>
+        <br>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>name:</strong>
+                <strong>Company name:</strong>
                 {{ $company->name }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>email:</strong>
+                <strong>Company email:</strong>
                 {{ $company->email }}
             </div>
         </div>
