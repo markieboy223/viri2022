@@ -6,9 +6,6 @@
             <div class="pull-left">
                 <h2>Viri verified companies</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-success" href="{{ route('companys.create') }}"> Create New Company</a>
-            </div>
         </div>
     </div>
 

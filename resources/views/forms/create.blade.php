@@ -7,7 +7,7 @@
                 <h2>Viri form</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="/"> Back</a>
+                <a class="btn btn-primary" href="/#contact"> Back</a>
             </div>
         </div>
     </div>

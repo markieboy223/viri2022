@@ -8,6 +8,8 @@
         <a href="/#home" class="JMSoft-bar-item JMSoft-button">HOME</a>
         <a href="/#about" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-user"></i>
             ABOUT</a>
+        <a href="/#chart" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fab fa-deezer"></i>
+            Charts</a>
         <a href="/#services" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-th"></i>
             SERVICES</a>
         <a href="/companys" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-building"></i>

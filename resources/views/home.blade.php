@@ -22,25 +22,40 @@
     </p>
     <div class="JMSoft-row">
         <div class="JMSoft-col m6 JMSoft-center JMSoft-padding-large">
-            <img src="{{ asset('assets/images/team.jpg') }}"
-                 class="JMSoft-round JMSoft-image JMSoft-opacity JMSoft-hover-opacity-off" alt="Photo of Me"
+            <img src="{{ asset('assets/images/us.png') }}"
+                 class="JMSoft-round JMSoft-image JMSoft-hover-opacity-off" alt="Photo of Me"
                  width="500"
                  height="333">
         </div>
 
         <!-- Hide this text on small devices -->
         <div class="JMSoft-col m6 JMSoft-hide-small JMSoft-padding-large">
-            <p>Welcome to Viri Solutions one of the newest but most professional companies out there. We are trying to
-                create name and impact in the sustainability plans of a company. Our goal is to make every company so
-                sustainable as possible. A lot of companies aren’t clear about how sustainable their products are and
-                their packaging is. With the Virification they can change that. The Virification is a quality mark that
-                gives a look into the sustainability of a company.</p>
+            <p>Do you know that you eat a credit card of plastic every week? This has
+                serious consequences in our lives. Our company Viri Solutions is here to
+                help you to know which companies sustainable and which products are safe
+                to use. We create sustainability and transparency and enhance
+                responsibility in business.
+                <br>
+                <br>
+                Companies using our quality marks called Virification are
+                environmentally safe and you will know that you are not harming the
+                environment and spoiling your health with microplastic when using their
+                products. We believe that every business has responsibility over the
+                whole cycle of their processes, and we should be able to be free to
+                choose ecologically sustainable and friendly products.
+                <br>
+                <br>
+                We are convinced that it is essential to work to undo the mistakes we
+                have done with the ecosystem. You are welcome to read more about us and
+                to take care of your life, our planet and the health of the whole
+                ecosystem with us.</p>
         </div>
     </div>
 </div>
+<div id="chart">
 
 <div class="JMSoft-row JMSoft-center JMSoft-dark-grey JMSoft-padding-16">
-    <div><span class="JMSoft-xlarge">Plastic Statistics In 2010</span></div>
+    <div style="padding-top: 20px"><span class="JMSoft-xlarge">Plastic Statistics In 2010</span></div>
     <div class="JMSoft-center JMSoft-medium"><span>(MT = Million Tonnes)</span></div>
 
     <div class="JMSoft-third JMSoft-section">
@@ -69,39 +84,41 @@
     </div>
 </div>
 
-<!-- Slideshow container -->
-<div class="slideshow-container" id="slider-height">
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-        {{--            <div class="numbertext">1 / 3</div>--}}
-        <img class="img-100" width="400px"
-             src="{{ asset('assets/images/plasticInfo/global-plastics-production.svg') }}"
-             alt="global plastics production">
-        <div class="text">Global Plastics Production</div>
+    <!-- Slideshow container -->
+    <div class="slideshow-container" id="slider-height">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            {{--            <div class="numbertext">1 / 3</div>--}}
+            <img class="img-100" width="380px"
+                 src="{{ asset('assets/images/plasticInfo/global-plastics-production.svg') }}"
+                 alt="global plastics production">
+            <div class="text">Global Plastics Production</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img class="img-100" src="{{ asset('assets/images/plasticInfo/plastic-waste-by-sector.svg') }}"
+                 alt="plastic waste by sector">
+            <div class="text">Plastic Waste By Sector</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img class="img-100" src="{{ asset('assets/images/plasticInfo/cumulative-global-plastics.svg') }}"
+                 alt="cumulative global plastics">
+            <div class="text">Cumulative Global Plastics</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img class="img-100" src="{{ asset('assets/images/plasticInfo/plastic-waste-by-sector.svg') }}"
-             alt="plastic waste by sector">
-        <div class="text">Plastic Waste By Sector</div>
-    </div>
-    <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img class="img-100" src="{{ asset('assets/images/plasticInfo/cumulative-global-plastics.svg') }}"
-             alt="cumulative global plastics">
-        <div class="text">Cumulative Global Plastics</div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-<!-- The dots/circles -->
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
 <!-- Modal for full size images on click-->
@@ -160,7 +177,7 @@
              style="max-height: 890px !important;"
         >
         <div class="JMSoft-display-middle">
-            <span class="card-title-custom JMSoft-text-white JMSoft-xxlarge">CLICK HERE TO CHANGE THE WORLD!</span>
+            <a href="/forms/create"><span class="card-title-custom JMSoft-text-white JMSoft-xxlarge">CLICK HERE TO CHANGE THE WORLD!</span></a>
         </div>
     </div>
 </div>
@@ -173,13 +190,13 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="JMSoft-content JMSoft-container JMSoft-padding-64" id="contact">
+<div class="JMSoft-content JMSoft-container" id="contact">
     <h3 class="JMSoft-center">WHERE I WORK</h3>
     <p class="JMSoft-center"><em>I'd love your feedback!</em></p>
 
     <div class="JMSoft-row JMSoft-padding-32 JMSoft-section">
         <div class="JMSoft-col m4 JMSoft-container">
-            <img src="{{ asset('assets/images/map.jpg') }}" class="JMSoft-image JMSoft-round">
+            <img style="width: 800px" src="{{ asset('assets/images/map.jpg') }}" class="JMSoft-image JMSoft-round">
         </div>
         <div class="JMSoft-col m8 JMSoft-panel">
             <div class="JMSoft-large JMSoft-margin-bottom">
