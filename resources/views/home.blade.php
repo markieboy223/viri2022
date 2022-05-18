@@ -131,6 +131,8 @@
     </div>
 </div>
 
+<div id="services">
+
 <!-- Four Parallax Image with Services Text -->
 <div class="bgimg-4 JMSoft-display-container JMSoft-opacity-min">
     <div class="JMSoft-display-middle">
@@ -138,7 +140,6 @@
     </div>
 </div>
 
-<div id="services">
     <div class="JMSoft-row JMSoft-center">
         {{--        <div><span class="JMSoft-xlarge">Choose Sector</span></div>--}}
         <div class="JMSoft-third JMSoft-section bg-white">
@@ -171,13 +172,15 @@
             </div>
         </div>
     </div>
-    <div class="card-custom">
-        <img src="{{ asset('assets/images/ict-factory.jpg') }}" alt="Gold Checkmark"
-             class="card-image-custom"
-             style="max-height: 890px !important;"
-        >
-        <div class="JMSoft-display-middle">
-            <a href="/forms/create"><span class="card-title-custom JMSoft-text-white JMSoft-xxlarge">CLICK HERE TO CHANGE THE WORLD!</span></a>
+    <div id="companys">
+        <div class="card-custom">
+            <img src="{{ asset('assets/images/ict-factory.jpg') }}" alt="Gold Checkmark"
+                 class="card-image-custom"
+                 style="max-height: 890px !important;"
+            >
+            <div class="JMSoft-display-middle">
+                <a href="/forms/create"><span class="card-title-custom JMSoft-text-white JMSoft-xxlarge">CLICK HERE TO CHANGE THE WORLD!</span></a>
+            </div>
         </div>
     </div>
 </div>

@@ -12,7 +12,7 @@
             Charts</a>
         <a href="/#services" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-th"></i>
             SERVICES</a>
-        <a href="/companys" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-building"></i>
+        <a href="/#companys" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-building"></i>
             COMPANIES</a>
         <a href="/#contact" class="JMSoft-bar-item JMSoft-button JMSoft-hide-small"><i class="fa fa-envelope"></i>
             CONTACT</a>
